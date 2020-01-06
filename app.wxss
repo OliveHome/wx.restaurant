@@ -1,0 +1,90 @@
+/**app.wxss**/
+/* .container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+}  */
+@import './weui-miniprogram/weui-wxss/dist/style/weui.wxss';
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+/*个人中心的条目布局,全局统一布局  */
+.my_item {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 17px;
+  background: white;
+  border-bottom: 1px solid gainsboro;
+}
+.line_5px {
+  height: 15px;
+}
+.line_8pt {
+  height: 8pt;
+}
+.line_1px {
+  height: 1px;
+  background: gainsboro
+}
+.right_arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  padding: 3px;
+  position: absolute;
+  right: 15px;
+  /* margin-left: 66%; */
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+/*星级字体*/
+/* 引入了iconfont */
+@font-face {
+  font-family: 'iconfont';  /* project id 1504658 */
+  src: url('//at.alicdn.com/t/font_1504658_44vddg9in35.eot');
+  src: url('//at.alicdn.com/t/font_1504658_44vddg9in35.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_1504658_44vddg9in35.woff2') format('woff2'),
+  url('//at.alicdn.com/t/font_1504658_44vddg9in35.woff') format('woff'),
+  url('//at.alicdn.com/t/font_1504658_44vddg9in35.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_1504658_44vddg9in35.svg#iconfont') format('svg');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-add:before {
+  content: "\e620";
+}
+
+.icon-starSelected:before {
+  content: "\e615";
+}
+
+.icon-cart:before {
+  content: "\e690";
+}
+
+.icon-trashcan:before {
+  content: "\e616";
+}
+
+.icon-subtract:before {
+  content: "\e61f";
+}
+.icon-star:before {
+  content: "\e68a";
+}
+/*星级字体*/
